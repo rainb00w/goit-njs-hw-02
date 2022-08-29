@@ -19,7 +19,6 @@ const removeContact = async (contactId) => {
   const idx = contacts.findIndex(
     (item) => String(item.id) === String(contactId)
   );
-  // console.log("IDX", idx);
   if (idx === -1) {
     return null;
   }
